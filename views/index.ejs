@@ -1,0 +1,540 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <title>Tìm cửa hàng | Bách hóa xanh</title>
+    <meta name="robots" content="index, follow" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js"
+      integrity="sha256-k1l+ouvMXT+0iRA8pc8e0dge4ZeGjXG6imrvWboFTRE="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <script src="leaflet/leaflet.js"></script>
+    <style type="text/css">
+        .menuOTher .wrapper>.box_mid .mid-title,
+        .menuOTher div#vnt-main>.box_mid .mid-title,
+        .vnt-button .button-wrap>div.buttons:first-child {
+            display: none
+        }
+
+        div#vnt-content>.menuOTher {
+            padding: 95px 0 50px
+        }
+
+        .mid-content>.otherDes,
+        .mid-content>.productDes {
+            margin-bottom: 80px
+        }
+
+        .wrapper>.vnt-button .buttons {
+            max-width: 364px;
+            width: 100%;
+            margin: 0 auto;
+            float: none
+        }
+
+        @media (max-width:991px) {
+            div#vnt-content>.menuOTher {
+                padding: 25px 0 35px
+            }
+
+            .mid-content>.otherDes {
+                margin-bottom: 25px
+            }
+        }
+    </style>
+
+    </script>
+    <link rel="SHORTCUT ICON"
+        href="https://www.highlandscoffee.com.vn/vnt_upload/File/Image/1200px-Highlands_Coffee_logo.svg.png"
+        type="image/x-icon" />
+    <link rel="icon"
+        href="https://www.highlandscoffee.com.vn/vnt_upload/File/Image/1200px-Highlands_Coffee_logo.svg.png"
+        type="image/gif" />
+    <link href="https://www.highlandscoffee.com.vn/js/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://www.highlandscoffee.com.vn/skins/default/fontawesome/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://www.highlandscoffee.com.vn/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.highlandscoffee.com.vn/js/jquery_alerts/jquery.alerts.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://www.highlandscoffee.com.vn/js/slick/slick.css" type="text/css" rel="stylesheet" />
+    <link href="https://www.highlandscoffee.com.vn/js/menumobile/menumobile.css" type="text/css" rel="stylesheet" />
+    <link href="https://www.highlandscoffee.com.vn/skins/default/style/screen.css?v=1" rel="stylesheet"
+        type="text/css" />
+    <script
+        language="javascript"> var ROOT = "https://www.highlandscoffee.com.vn/"; var ROOT_MOD = "https://www.highlandscoffee.com.vn/vn/he-thong-cua-hang"; var DIR_IMAGE = "https://www.highlandscoffee.com.vn/skins/default/images"; var cmd = "vnTRUST"; var lang = "vn"; var mem_id = 0; var js_lang = new Array(); js_lang['announce'] = "Thông báo"; js_lang['error'] = "Báo lỗi"; </script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/jquery_alerts/jquery.alerts.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/menumobile/menumobile.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/mnfixed/mnfixed.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/core.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/javascript.js?v=6"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/js/style.js"></script>
+
+    <link rel="stylesheet" href="https://www.highlandscoffee.com.vn/modules/dealer/css/dealer.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.highlandscoffee.com.vn/modules/dealer/css/maps.css?rand=64"
+        type="text/css" />
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/modules/dealer/js/dealer.js"></script>
+    <script type="text/javascript" src="https://www.highlandscoffee.com.vn/modules/dealer/js/store.js"></script>
+
+    <link href="https://www.highlandscoffee.com.vn/skins/default/style/custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div id="vnt-wrapper">
+        <div id="vnt-container">
+
+            <div id="vnt-header">
+                <div class="wrapper">
+                    <div class="logo">
+                        <!-- <a onmousedown="return rwt(this,'advertise',86)" href='http://' target='_self' title=''><img
+                                src='https://www.highlandscoffee.com.vn/vnt_upload/weblink/1200px-Highlands_Coffee_logo.svg.png'
+                                alt='' /></a> -->
+                                <img src="/img/logobhx.png" width="100px" height="auto"/>
+                    </div>
+                    <div class="header-tools">
+                        <div class="rowTools">
+                            <div class="searchTop hidden-sm hidden-xs">
+
+                                <form id="formSearch" name="formSearch" method="post"
+                                    action="https://www.highlandscoffee.com.vn/vn/tim-kiem.html"
+                                    onSubmit="return check_search(this);" class="box_search">
+                                    <input name="keyword" id="keyword" type="text" class="text_search"
+                                        placeholder="Từ khóa" value="" />
+                                    <button name="btn-search" type="submit" value=""><img
+                                            src="https://www.highlandscoffee.com.vn/skins/default/images/i-search.svg"
+                                            alt="search" /></button>
+                                    <input name="do_search" value="1" type="hidden" />
+                                </form>
+
+
+                            </div>
+                            <div class="languageTop">
+                                <ul>
+                                    <li><a href="https://www.highlandscoffee.com.vn/vn/he-thong-cua-hang.html"><img
+                                                src="https://www.highlandscoffee.com.vn/vnt_upload/lang/flag-vn.jpg"
+                                                alt="VN" /></a></li>
+                                    <li><a href="https://www.highlandscoffee.com.vn/en/dealer.html"><img
+                                                src="https://www.highlandscoffee.com.vn/vnt_upload/lang/flag-en.jpg"
+                                                alt="EN" /></a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mobile hidden-lg hidden-md">
+                                <div class="icon_menu"><span class="style_icon"></span>Menu</div>
+                            </div>
+                        </div>
+                        <div class="menuTop hidden-sm hidden-xs">
+                            <ul>
+                                <li class='menu-list current'><a
+                                        href="https://www.highlandscoffee.com.vn/vn/he-thong-cua-hang.html"
+                                        target="_self"><span>QUÁN CÀ PHÊ</span></a></li>
+                                <li class='menu-mega'><a href="https://www.highlandscoffee.com.vn/vn/san-pham.html"
+                                        target="_self"><span>THỰC ĐƠN</span></a>
+                                    <div class="menuMega">
+                                        <div class="wrapper">
+                                            <div class="grid">
+                                                <div class="col1">
+                                                    <ul>
+                                                        <li><a href="https://www.highlandscoffee.com.vn/vn/ca-phe.html">CÀ
+                                                                PHÊ</a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/ca-phe-truyen-thong.html">Cà
+                                                                        Phê Phin</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/phindi-ca-phe-phin-the-he-moi.html">PhinDi</a>
+                                                                </li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/espresso-coffee.html">Cà
+                                                                        Phê Espresso</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/freeze.html">FREEZE</a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/phin-freeze.html">Freeze
+                                                                        Cà Phê Phin</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/freeze-khong-ca-phe.html">Freeze
+                                                                        Không Cà Phê</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/highlands-teas.html">TRÀ</a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/tra-sen-vang-cu-nang-.html">Trà
+                                                                        Sen Vàng Mới</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/tra-thach-dao.html">Trà
+                                                                        Thạch Đào</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/tra-thanh-d.html">Trà
+                                                                        Thanh Đào</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/tra-thac-vai.html">Trà
+                                                                        Thạch Vải</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/tra-nhiet-doi.html">TRÀ
+                                                                        NHIỆT ĐỚI (MỚI&#33;)</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/khac.html">KHÁC</a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/banh-ngot.html">Bánh
+                                                                        Ngọt</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/merchandise.html">Merchandise</a>
+                                                                </li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/ca-phe-dong-goi-1521446860.html">Cà
+                                                                        Phê Đóng Gói</a></li>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/thuc-don.html">Thực
+                                                                        Đơn Giao Hàng</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="bannerMenu">
+                                                        <div class="txt"><a href="phin-sua.html">Phin Sữa Đá Đậm Đà Chất
+                                                                Phin&#33; 29.000đ</a></div>
+                                                        <div class="img"><a href="phin-sua.html"><img
+                                                                    src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/z1.jpg"
+                                                                    alt="Phin Sữa Đá Đậm Đà Chất Phin&#33; 29.000đ" /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class='menu-mega'><a href="https://www.highlandscoffee.com.vn/vn/tin-tuc.html"
+                                        target="_self"><span>TIN TỨC</span></a>
+                                    <div class="menuMega">
+                                        <div class="wrapper">
+                                            <div class="grid">
+                                                <div class="col1">
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/tin-tuc-su-kien.html">TIN
+                                                                TỨC &amp; SỰ KIỆN</a></li>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/tin-khuyen-mai.html">TIN
+                                                                KHUYẾN MẠI</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="bannerMenu">
+                                                        <div class="txt"><a
+                                                                href="highlands-coffee-tu-hao-sinh-ra-tu-dat-viet-1999.html">Tự
+                                                                hào sinh ra từ đất Việt, 1999&#33;</a></div>
+                                                        <div class="img"><a
+                                                                href="highlands-coffee-tu-hao-sinh-ra-tu-dat-viet-1999.html"><img
+                                                                    src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/Thumbnail.jpg"
+                                                                    alt="Tự hào sinh ra từ đất Việt, 1999&#33;" /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class='menu-mega'><a href="https://www.highlandscoffee.com.vn/vn/trach-nhiem.html"
+                                        target="_self"><span>CỘNG ĐỒNG</span></a>
+                                    <div class="menuMega">
+                                        <div class="wrapper">
+                                            <div class="grid">
+                                                <div class="col1">
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/ton-vinh-gia-tri-van-hoa.html">Giá
+                                                                trị Văn hóa Việt</a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/duong-dai-hoa-tranh-dong-ho-.html">Đương
+                                                                        Đại Hóa Tranh Đông Hồ</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/cong-dong.html">Cộng
+                                                                Đồng</a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="https://www.highlandscoffee.com.vn/vn/trung-thu-yeu-thuong-lop-hoc-cho-em-2017.html">Lớp
+                                                                        Học Cho Em</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="bannerMenu">
+                                                        <div class="txt"><a
+                                                                href="duong-dai-hoa-tranh-dong-ho-.html">Đương Đại Hóa
+                                                                Tranh Đông Hồ</a></div>
+                                                        <div class="img"><a
+                                                                href="duong-dai-hoa-tranh-dong-ho-.html"><img
+                                                                    src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/KV_Highlands_CSR_1.jpg"
+                                                                    alt="Đương Đại Hóa Tranh Đông Hồ" /></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class='menu-mega'><a href="https://www.highlandscoffee.com.vn/vn/gioi-thieu.html"
+                                        target="_self"><span>VỀ CHÚNG TÔI</span></a>
+                                    <div class="menuMega">
+                                        <div class="wrapper">
+                                            <div class="grid">
+                                                <div class="col1">
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/khoi-nguon.html">KHỞI
+                                                                NGUỒN</a></li>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/dich-vu-khach-hang.html">DỊCH
+                                                                VỤ KHÁCH HÀNG</a></li>
+                                                        <li><a
+                                                                href="https://www.highlandscoffee.com.vn/vn/nghe-nghiep.html">NGHỀ
+                                                                NGHIỆP</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col2">
+                                                    <div class="bannerMenu">
+                                                        <div class="txt"><a href="/vn/khoi-nguon.html">Thương hiệu bắt
+                                                                nguồn từ cà phê Việt&#33;</a></div>
+                                                        <div class="img"><a href="/vn/khoi-nguon.html"><img
+                                                                    src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/ABOUT-ORIGIN.png"
+                                                                    alt="Thương hiệu bắt nguồn từ cà phê Việt&#33;" /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="vnt-content">
+
+                <div id="vnt-store">
+                    <div class="wrapper">
+
+                        <div class="box_mid">
+                            <div class="mid-title">
+
+                                <div class="titleL">
+                                    <h1>Tìm cửa hàng Bách Hóa Xanh</h1>
+                                </div>
+                                <div class="titleR"></div>
+                                <div class="clear"></div>
+
+                            </div>
+
+
+                            <div class="mid-content">
+
+                                <div class="formSearch" id="boxMapSearch">
+                                    <form name="modSearch" id="fromMapSearch" method="post" action=""
+                                        onsubmit="return false">
+                                        <div class="gridF">
+
+                                            <div class="col2">
+                                                <div class="formFa fa-caret-down"><select id="state" name="state"
+                                                        class="form-control">
+                                                        <option value="">Chọn Quận/Huyện</option>
+                                                        <option value="1">Quận Thốt Nốt</option>
+                                                        <option value="2">Quận Bình Thủy</option>
+                                                        <option value="3">Quận Cái Răng</option>
+                                                        <option value="4">Quận Ô Môn</option>
+                                                        <option value="5">Huyện Phong Điền</option>
+                                                        <option value="6">Huyện Cờ Đỏ</option>
+                                                        <option value="7">Huyện Vĩnh Thạnh</option>
+                                                        <option value="8">Huyện Thới Lai</option>
+                                                    </select></div>
+                                            </div>
+                                            <div class="col2">
+                                                <div class="formFa fa-caret-down"><select id="state" name="state"
+                                                        class="form-control">
+                                                        <option value="">Chọn Phường</option>
+                                                    </select></div>
+                                            </div>
+                                           
+                                            <div class="col3">
+                                                <input type="text" placeholder="Nhập tên đường, hoặc quán..."
+                                                    name="key_search" id="key_search" class="form-control"
+                                                    autocomplete="off">
+                                                <div class="search-suggestion-wrapper"></div>
+                                            </div>
+                                            <div class="col4">
+                                                <button type="submit" name="btnSearch" id="btnSearch"
+                                                    class="btn-submit-search" value=""><span>Tìm kiếm</span></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="result_dealer">
+                                    <div class="result_info">
+                                        <div id="viewList" class="list-view">
+                                            <div class="r-count">Tìm được <span id="map_num">0</span> quán</div>
+                                            <div class="show-result result-wrapper" id="viewList">
+                                                <div class="item-view"></div>
+                                                <div class="page-view pagination"></div>
+                                            </div>
+                                        </div>
+                                        <div id="directions" style="display: none">
+                                            <div id="directionsContainer">
+                                                <form id="directionsForm" data-placeholder="Vị trí của bạn"
+                                                    onsubmit="return false;">
+                                                    <ol class="form">
+                                                        <li>
+                                                            <ul id="travel-modes">
+                                                                <li class="driving">
+                                                                    <input id="driving-rad" type="radio"
+                                                                        name="travelMode" value="DRIVING" checked />
+                                                                    <label for="driving-rad" title="Lái xe">Lái
+                                                                        xe</label>
+                                                                </li>
+                                                                <li class="transit">
+                                                                    <input id="transit-rad" type="radio"
+                                                                        name="travelMode" value="TRANSIT" />
+                                                                    <label for="transit-rad" title="Chuyển tiếp">Chuyển
+                                                                        tiếp</label>
+                                                                </li>
+                                                                <li class="walking">
+                                                                    <input id="walking-rad" type="radio"
+                                                                        name="travelMode" value="WALKING" />
+                                                                    <label for="walking-rad" title="Đi bộ">Đi bộ</label>
+                                                                </li>
+                                                                <li class="bicycling">
+                                                                    <input id="bicycling-rad" type="radio"
+                                                                        name="travelMode" value="BICYCLING" />
+                                                                    <label for="bicycling-rad" title="Đi xe đạp">Đi xe
+                                                                        đạp</label>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="origin">
+                                                            <div class="directions-input">
+                                                                <label for="origin">A</label>
+                                                                <input type="text" id="origin" name="origin"
+                                                                    placeholder="Nhập vị trí" autocomplete="off" />
+                                                                <p class="error">Không thể tìm thấy vị trí gốc.</p>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="destination">
+                                                            <div class="directions-input">
+                                                                <label for="destination">B</label>
+                                                                <input type="text" id="destination" name="destination"
+                                                                    placeholder="Nhập vị trí" readonly />
+                                                                <input type="hidden" id="destLatLng" name="destLatLng"
+                                                                    value="" />
+                                                                <p class="error">Không thể tìm thấy vị trí đích.</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="noRoute error" style="display:none">Không thể tìm
+                                                            thấy tuyến đường giữa A và B.</li>
+                                                        <li>
+                                                            <div class="div-button">
+                                                                <button type="button" id="getDirections"
+                                                                    class="btn-direction">Nhận Chỉ đường</button>
+                                                                <button type="button" id="cancelDirections"
+                                                                    class="btn-direction">Hủy bỏ</button>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
+                                                </form>
+                                                <div id="routes"></div>
+                                                <div id="directions_waiting" aria-busy="true" class="hide"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="result_map" id="viewMap">
+                                        <div class="mapdemo showmap">
+
+                                            <button id="findMe" style="display: inline-block;">findMe</button>
+                                            <div id="map"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+
+                                <!-- <script type="text/javascript">
+                                    var tim_duong = "Tìm đường";
+                                    var xem_chi_tiet = "Xem chi tiết";
+                                    var open = "Mở cửa";
+                                    var LINK_MOD = "https://www.highlandscoffee.com.vn/vn/he-thong-cua-hang";
+                                    var url_ajax = ROOT + "modules/dealer/ajax";
+                                    var mapDirImage = ROOT + "modules/dealer/images";
+                                    var map_icon = "https://www.highlandscoffee.com.vn/vnt_upload/dealer/map_icon.svg";
+                                    var map_icon_hover = "https://www.highlandscoffee.com.vn/vnt_upload/dealer/map_icon.svg";
+                                    var mapContext = { "keyword": "0", "catid": "0", "country": "VN", "city": "2", "state": "0", "utilities": "", "page": "1", "center": "", "lstPoint": "", "zoom": "12", "searchType": 0, "curID": "0" };
+                                    var mapType = 0;
+                                </script> -->
+
+
+                             
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="vnt-footer">
+                <div class="wrapper">
+                    <div class="vnt-button hidden-lg hidden-md">
+                        <div class="button-wrap">
+                            <div class="buttons">
+                                <a href="tel:(028) 2.448.907" class="btn-mm"><span class="fa-phone">Call now</span></a>
+                            </div>
+                            <div class="buttons">
+                                <a href="https://www.highlandscoffee.com.vn/vn/he-thong-cua-hang.html"
+                                    class="btn-mm"><span class="fa-map-marker">VIEW MAP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socialFoot">
+                      
+                    </div>
+                    <div class="copyRight">© 2018 Highlands Coffee. All rights reserved</div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <script src="script/script.js"></script>
+   
+</body>
+
+</html>

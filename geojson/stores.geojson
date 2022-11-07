@@ -1,0 +1,831 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Thửa đất số 423 tại Cần Thơ",
+                "address": "Thửa đất số 423, tờ bản đồ số 34, đường Tầm Vu, phường Hưng Lợi, quận Ninh Kiều, TP. Cần Thơ"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.781146,
+                    10.044205
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Đường Nguyễn Văn Linh tại Cần Thơ",
+                "address": "Đường Nguyễn Văn Linh, Phường An Khánh, Quận Ninh Kiều (Đối diện khu dân cư Hàng Bàng - Kế bên hẻm 4)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.747516,
+                    10.034531
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Ấp Tân Long tại Cần Thơ",
+                "address": "Ấp Tân Long, Xã Tân Thới, Huyện Phong Điền, Thành phố Cần Thơ (ngay chợ Cầu Nhiễm)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.650801,
+                    10.013907
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Ấp Thạnh Quới 1 tại Cần Thơ",
+                "address": "Ấp Thạnh Quới 1, Xã Trung Hưng, Huyện Cờ Đỏ, TP. Cần Thơ (cách chợ Trung Hưng 100m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.480621,
+                    10.183660
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Ấp Phụng Quới A tại Cần Thơ",
+                "address": " Ấp Phụng Quới A, TT. Thạnh An, Huyện Vĩnh Thạnh, TP. Cần Thơ, Tỉnh Cần Thơ (cách chợ Kinh D 100m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.323778,
+                    10.156528
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 390A Trần Nam Phú tại Cần Thơ",
+                "address": " 390A Trần Nam Phú, Phường An Khánh, Quận Ninh Kiều, TP. Cần Thơ (cách ngã ba Trần Nam Phú - Nguyễn Văn Cừ 70m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.757964,
+                    10.035254
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 141A Nguyễn Văn Cừ nối dài tại Cần Thơ",
+                "address": "141A Nguyễn Văn Cừ nối dài, P. An Khánh, Quận Ninh Kiều, TP. Cần Thơ (Cách ngã 3 Nguyễn Văn Cừ - Nguyễn Tri Phương 50m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.759522,
+                    10.038190
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 35/5K Trần Chiên tại Cần Thơ",
+                "address": "35/5K Trần Chiên, Khu Vực Thạnh Mỹ, P. Lê Bình, Quận Cái Răng, TP. Cần Thơ (Đầu đường vào KDC Hậu Mỹ Thạnh)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.756327,
+                    10.002416
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 774 Bùi Hữu Nghĩa tại Cần Thơ",
+                "address": "774 Bùi Hữu Nghĩa, KV. Bình Dương, P. Long Hòa, Quận Bình Thủy, TP. Cần Thơ (Ngay chợ Long Hòa)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.725482,
+                    10.054881
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 110 Nguyễn Thị Minh Khai tại Cần Thơ",
+                "address": "110 Nguyễn Thị Minh Khai, P. Tân An, Quận Ninh Kiều, TP. Cần Thơ (Đối diện chợ An Lạc)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.782826,
+                    10.026025
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 1094 QL91 tại Cần Thơ",
+                "address": "1094 QL91, Khu Vực 4, P. Châu Văn Liêm, Quận Ô Môn, TP. Cần Thơ (Đối diện Thế Giới Di Động)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.620454,
+                    10.109117
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Khu Vực Thới Hòa 1 tại Cần Thơ",
+                "address": "Khu Vực Thới Hòa 1, P. Thới Thuận, Quận Thốt Nốt, TP. Cần Thơ (Ngay ngã 3 Lộ Tẻ - Gần Thế Giới Di Động)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.485978,
+                    10.315189
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Lô 2A2 KDC Hưng Phú 1 tại Cần Thơ",
+                "address": " Lô 2A2 KDC Hưng Phú 1, P. Hưng Phú, Quận Cái Răng, TP. Cần Thơ (Ngay quá Bò Tơ Cũ)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.782129,
+                    10.020236
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 301 QL1A tại Cần Thơ",
+                "address": "301 QL1A, Phường Lê Bình, Quận Cái Răng, TP. Cần Thơ (Cạnh Cây Xăng Chính Giang)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.733447,
+                    10.084236
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 32 Huỳnh Phan Hộ tại Cần Thơ",
+                "address": "32 Huỳnh Phan Hộ, P. Bình Thủy, Quận Bình Thủy, TP. Cần Thơ (Cách chợ Trà An 50m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.733447,
+                    10.084236
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 22 -24 Ấp Phú Thọ tại Cần Thơ",
+                "address": "22 -24 Ấp Phú Thọ, Xã Trường Xuân, Huyện Thới Lai, TP. Cần Thơ (Kế bên nhà văn hóa Trường Xuân)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.534035,
+                    10.007912
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Số 01 Nguyễn Hiền tại Cần Thơ",
+                "address": "Số 01 Nguyễn Hiền, P. Hưng Lợi, Q. Ninh Kiều, TP. Cần Thơ (Ngay đầu KDC 91B)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.758345,
+                    10.025183
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Số 91/8B Đường 30/4 tại Cần Thơ",
+                "address": "Hẻm 577 Đ. 30 Tháng 4, Hưng Lợi, Ninh Kiều, Cần Thơ"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.759538,
+                    10.011687
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Ấp Thạnh Lộc 2 tại Cần Thơ",
+                "address": " Ấp Thạnh Lộc 2, Xã Trung An, Huyện Cờ Đỏ, TP. Cần Thơ (đối diện trường THPT Trung An)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.509220,
+                    10.207130
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Đường Lê Thị Tạo tại Cần Thơ",
+                "address": "Đường Lê Thị Tạo, Khu vực Long Thạnh A, Phường Thốt Nốt, Quận Thốt Nốt, TP. Cần Thơ (cách bến phà - Chợ Thốt Nốt 200m))"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.532897,
+                    10.272812
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Số 8 Đồng Văn Cống tại Cần Thơ",
+                "address": "Số 8 Đồng Văn Cống, KV5, Phường An Thới, Quận Bình Thuỷ, TP. Cần Thơ (cách ngã 3 Đồng Văn Cống - Võ Văn Kiệt 50m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.756329,
+                    10.050112
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 20 Nguyễn Chí Thanh tại Cần Thơ",
+                "address": "20 Nguyễn Chí Thanh, P. Trà Nóc, Q. Bình Thủy, TP. Cần Thơ (Cách ngã 3 Nguyễn Chí Thanh 200m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.71469,
+                    10.098062
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 292 Cách Mạng Tháng 8 tại Cần Thơ",
+                "address": "292 Đ. Cách Mạng Tháng 8, Bùi Hữu Nghĩa, Bình Thủy, Cần Thơ"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.76502,
+                    10.060604
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Thị Trấn Cờ Đỏ tại Cần Thơ",
+                "address": "Cửa hàng BÁCH HÓA XANH 292 Cách Mạng Tháng 8 tại Cần Thơ"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.43078,
+                    10.094418
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Trung tâm thương mại huyện Vĩnh Thạnh tại Cần Thơ",
+                "address": "Trung tâm thương mại huyện Vĩnh Thạnh, thị trấn Vĩnh Thạnh, huyện Vĩnh Thạnh, TP. Cần Thơ (Đối diện cổng chợ Vĩnh Thạnh)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.39664,
+                    10.230158
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Ấp Thới Thuận A tại Cần Thơ",
+                "address": "Ấp Thới Thuận A, Thị Trấn Thới Lai, Huyện Thới Lai, TP. Cần Thơ (Ngay mặt tiền chợ Thới Lai)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.560137,
+                    10.066167
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Số 01 Nguyễn Hiền tại Cần Thơ",
+                "address": "Số 01 Nguyễn Hiền, P. Hưng Lợi, Q. Ninh Kiều, TP. Cần Thơ (Ngay đầu KDC 91B)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.758345,
+                    10.025183
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 22 -24 Ấp Phú Thọ tại Cần Thơ",
+                "address": "22 -24 Ấp Phú Thọ, Xã Trường Xuân, Huyện Thới Lai, TP. Cần Thơ (Kế bên nhà văn hóa Trường Xuân)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.534035,
+                    10.007912
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 32 Huỳnh Phan Hộ tại Cần Thơ",
+                "address": " 32 Huỳnh Phan Hộ, P. Bình Thủy, Quận Bình Thủy, TP. Cần Thơ (Cách chợ Trà An 50m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.733447,
+                    10.084236
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH 301 QL1A tại Cần Thơ",
+                "address": "301 QL1A, Phường Lê Bình, Quận Cái Răng, TP. Cần Thơ (Cạnh Cây Xăng Chính Giang)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.733447,
+                    10.084236
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cửa hàng BÁCH HÓA XANH Lô 2A2 KDC Hưng Phú 1 tại Cần Thơ",
+                "address": "Lô 2A2 KDC Hưng Phú 1, P. Hưng Phú, Quận Cái Răng, TP. Cần Thơ (Ngay quá Bò Tơ Cũ)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.782129,
+                    10.020236
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH KHU VỰC 13 TẠI CẦN THƠ",
+                "address": "Khu vực 13, Phường Châu Văn Liêm, Quận Ô Môn, Thành phố Cần Thơ, Việt Nam"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.624759,
+                    10.117767
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH THỬA ĐẤT SỐ 1526 VÀ 1527 TẠI CẦN THƠ",
+                "address": "Thửa đất số 1526 và 1527, tờ bản đố số 07, Cty Nam Long, khu vực 2, P. Hưng Thạnh, Quận Cái Răng, thành phố , thành phố Cần Thơ"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.750595,
+                    10.00097
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH THỬA SỐ 165 TẠI CẦN THƠ",
+                "address": "Thửa số 165, 216, 753, tờ bản đồ 12, Đường Đinh Tiên Hoàng, Phường Thới Bình, Quận Ninh Kiều, TP. Cần Thơ"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.779582,
+                    10.043179
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH KHU VỰC 13 TẠI CẦN THƠ",
+                "address": "Khu vực 13, Phường Châu Văn Liêm, Quận Ô Môn, Thành phố Cần Thơ, Việt Nam"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.624759,
+                    10.117767
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH ẤP THỚI GIAI TẠI CẦN THƠ",
+                "address": "Ấp Thới Giai, Xã Giai Xuân, Huyện Phong Điền, Thành phố Cần Thơ (Cách chợ Giai Xuân 100m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.690352,
+                    10.02814
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH ĐƯỜNG MẬU THÂN TẠI CẦN THƠ",
+                "address": " Đường Mậu Thân, Phường An Nghiệp, Quận Ninh Kiều, TP. Cần Thơ (gần trường mầm non An Nghiệp)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.773499,
+                    10.034546
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH QUỐC LỘ 91 TẠI CẦN THƠ",
+                "address": "Quốc Lộ 91, Khu vực Bình Hòa A, Phường Phước Thới, Quận Ô Môn, TP. Cần Thơ (Ngay ngã 3 Ba Se)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.66922,
+                    10.106
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH ĐƯỜNG TRƯƠNG VĨNH NGUYÊN TẠI CẦN THƠ",
+                "address": "Đường Trương Vĩnh Nguyên, KV Thạnh Mỹ, Phường Thường Thạnh, Quận Cái Răng, TP. Cần Thơ (Cầu Xẽo Lố, đối diện KDC Hoàng Quân)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.760549,
+                    9.986099
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH KHU VỰC YÊN TRUNG TẠI CẦN THƠ",
+                "address": "Khu vực Yên Trung, Phường Lê Bình, Quận Cái Răng, Thành phố Cần Thơ (ngay ngã 3 Lê Bình - Trần Hưng Đạo)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.753724,
+                    9.998529
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH SỐ 36 - 38 TRẦN VIỆT CHÂU TẠI CẦN THƠ",
+                "address": "Số 36 - 38 Trần Việt Châu, Phường An Hòa, Quận Ninh Kiều, TP. Cần Thơ (cách chợ An Hoà 50m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.773799,
+                    10.049471
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH SỐ 116A/3 TRẦN VĨNH KIẾT TẠI CẦN THƠ",
+                "address": "Số 116A/3 Trần Vĩnh Kiết, Phường An Bình, Quận Ninh Kiều, TP. Cần Thơ (cách ngã 3 Trần Văn Kiết - 3 tháng 2 100m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.751643,
+                    10.012139
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH KHU VỰC BÌNH PHÓ A TẠI CẦN THƠ",
+                "address": "Khu vực Bình Phó A, Phường Long Tuyền. Quận Bình Thuỷ, TP. Cần Thơ (gần chợ Phó Thọ)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.726728,
+                    10.031551
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 48A NGUYỄN ĐỆ TẠI CẦN THƠ",
+                "address": "48A Nguyễn Đệ, Khu Vực 4, P. An Thới, Quận Bình Thủy, TP. Cần Thơ (Ngay ngã 3 Nguyễn Đệ - Võ Trường Toản)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.764824,
+                    10.049467
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH TTTM PHONG ĐIỀN TẠI CẦN THƠ",
+                "address": "TTTM Phong Điền, Thị Trấn Phong Điền, Huyện Phong Điền, TP. Cần Thơ (Gần cầu Tây Đô)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.666717,
+                    9.996208
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 148 NGUYỄN TRI PHƯƠNG TẠI CẦN THƠ",
+                "address": "148 Nguyễn Tri Phương, P. An Khánh, Quận Ninh Kiều, TP. Cần Thơ (Ngay ngã tư Nguyễn Tri Phương - Tô Hiến Thành)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.755235,
+                    10.04118
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH LÔ G7A-5 KDC AN PHÚ TẠI CẦN THƠ",
+                "address": " Lô G7A-5 KDC An Phú, P. Phú Thứ, Quận Cái Răng, TP. Cần Thơ (Cách chợ Phú Thứ 100m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.806252,
+                    10.0041
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH ẤP ĐÔNG HÒA TẠI CẦN THƠ",
+                "address": "Ấp Đông Hòa, Xã Đông Thuận, Huyện Thới Lai, TP. Cần Thơ (Cách cầu Kinh Ngang 30m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.477346,
+                    10.02129
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 73 PHẠM NGŨ LÃO TẠI CẦN THƠ",
+                "address": " 73 Phạm Ngũ Lão, P. Thới Bình, Quận Ninh Kiều, TP. Cần Thơ (Gần ngã 3 Trần Việt Châu - Phạm Ngũ Lão)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.776208,
+                    10.046092
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 451 QL91 TẠI CẦN THƠ",
+                "address": "451 QL91, Khu Vực Long Thạnh 2, P. Thốt Nốt, Quận Thốt Nốt, TP. Cần Thơ (Ngay ngã 3 Mũi Tàu)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.528216,
+                    10.277102
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH QUỐC LỘ 91B TẠI CẦN THƠ",
+                "address": "Quốc Lộ 91B, P. Bình Thủy, Quận Bình Thủy, TP. Cần Thơ (Đối diện chợ Bà Bộ)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.745001,
+                    10.036362
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 132/2 ĐƯỜNG BA THÁNG HAI TẠI CẦN THƠ",
+                "address": "132/2 Đường Ba Tháng Hai, P. Hưng Lợi, Quận Ninh Kiều, TP. Cần Thơ (Cách đầu hẻm 132 50m)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.761237,
+                    10.018584
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH KHU VỰC THỚI MỸ TẠI CẦN THƠ",
+                "address": " Khu vực Thới Mỹ, P. Thới Long, Quận Ô Môn, TP. Cần Thơ (Đầu đường vào sân vận động Thới Lai)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.589935,
+                    10.171839
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 152 TRẦN QUANG DIỆU TẠI CẦN THƠ",
+                "address": "152 Trần Quang Diệu, Phường An Thới, Quận Bình Thủy, Thành phố Cần Thơ (Kế bên T80)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.761008,
+                    10.058749
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 45/3 BÙI HỮU NGHĨA TẠI CẦN THƠ",
+                "address": "45/3 Bùi Hữu Nghĩa, P. Bình Thủy, Quận Bình Thủy, TP. Cần Thơ (Ngay chợ Bình Thủy)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.752485,
+                    10.070755
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 76 NGUYỄN VĂN CỪ NỐI DÀI TẠI CẦN THƠ",
+                "address": "76 Nguyễn Văn Cừ Nối Dài, P. An Bình, Q. Ninh Kiều, TP. Cần thơ (Đối diện đường số 3 Cổng KDC Hồng Phát)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.746555,
+                    10.025435
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH 10B NGUYỄN VĂN LINH TẠI CẦN THƠ",
+                "address": "10B Nguyễn Văn Linh, P. Hưng Lợi, Q. Ninh Kiều, TP. Cần Thơ (Ngay đầu đường Nguyễn Văn Linh)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.764237,
+                    10.021952
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "CỬA HÀNG BÁCH HÓA XANH KHU DÂN CƯ THƯƠNG MẠI PHONG ĐIỀN TẠI CẦN THƠ",
+                "address": "Khu dân cư Thương Mại Phong Điền, TT. Phong Điền, H. Phong Điền, Cần Thơ (Ngay trong chợ Phong Điền (Khu chợ Thực Phẩm))"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.669740,
+                    9.997292
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "151/20B Trần Hoàng Na, Hưng Lợi, Ninh Kiều, Cần Thơ",
+                "address": "151/6 Trần Hoàng Na, P. Hưng Lợi, Q, Ninh Kiều, TP. Cần Thơ (Đối diện trường mẫu giáo Trạng Tí 2)"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.762930,
+                    10.013847
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            105.769168,
+                            10.031591
+                        ],
+                        [
+                            105.768696,
+                            10.030957
+                        ],
+                        [
+                            105.769104,
+                            10.030619
+                        ],
+                        [
+                            105.769608,
+                            10.031284
+                        ],
+                        [
+                            105.769168,
+                            10.031591
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "color": "red",
+                "name": "Khoa CNTT&TT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polyline",
+                "coordinates": [[ 105.772119,10.03027], [ 105.771035,10.031157]]
+            },
+            "properties": {
+                "color": "red",
+                "name": "Duong vao truong"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ 105.772097,10.030249]
+            },
+            "properties": {
+                "color": "blue",
+                "name": "Cổng A Trường ĐHCT"
+            }
+        }
+    ]
+}
