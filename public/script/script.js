@@ -40,11 +40,16 @@ khi gỡ cũng chỉ cần gỡ or clear layer là tắt hết các đối tư�
 var layerObject = L.layerGroup().addTo(mapObject);
 
 $.getJSON("/allstore", function (ft) { 
-
-    function onEachFeature(feature, layer) {
+    var itemView = $(".item-view");
+    function onEachFeature(feature, layer) { //thêm ds các cửa hàng bách hóa xanh vào list bên cạnh
+        itemView.append("<div class='item detail-item-current' id="+feature._id+"  zindex='1'><div class='info'><div class='name'>"+feature.properties.name+"</div><div class='address'>"+feature.properties.address+"</div></div></div>");
         layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Địa chỉ: '+feature.properties.address+'</p>');
         layer.setIcon(greenIcon);
     }
+
+    var totalStore =  $("#viewList"); //thêm tổng số cửa hàng ở trên cùng
+    totalStore.prepend("<div class='r-count'>Tìm được "+ft.features.length+" cửa hàng</div>");
+
     L.geoJson(ft, {
       onEachFeature: onEachFeature,
     }).addTo(layerObject);
@@ -63,6 +68,7 @@ control1.addTo(mapObject);
 $.getJSON("/allstore" , function (data) {
     var menu = $("#combobox1");
     menu.append("<option id='selectAll' value='selectAll' >Tất cả</option>");
+
     data.features.map((item)=>{
         var locationOp = document.createElement("option");
         locationOp.setAttribute("id",item._id);
@@ -81,7 +87,7 @@ function selectToBindPopup(feature,layer) {
 $("#combobox1").on("change", function() {
     var idSelected = $("#combobox1").val();
     console.log(idSelected);
-    if(idSelected == "selectAll"){
+    if(idSelected == "selectAll"){ 
         $.getJSON('/allstore', function(data) {
             L.geoJson(data, {
                 onEachFeature: selectToBindPopup
