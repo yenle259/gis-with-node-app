@@ -62,7 +62,7 @@ control1.addTo(mapObject);
 // thêm tên tất cả store vào combo box
 $.getJSON("/allstore" , function (data) {
     var menu = $("#combobox1");
-    menu.append("<option>Tất cả</option>");
+    menu.append("<option id='selectAll' value='selectAll' >Tất cả</option>");
     data.features.map((item)=>{
         var locationOp = document.createElement("option");
         locationOp.setAttribute("id",item._id);
@@ -73,18 +73,33 @@ $.getJSON("/allstore" , function (data) {
     })
 });
 
+function selectToBindPopup(feature,layer) {             
+    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Địa chỉ: '+feature.properties.address+'</p>')
+    .addTo(layerObject);
+}
+
 $("#combobox1").on("change", function() {
     var idSelected = $("#combobox1").val();
-    $.getJSON('/allstore', function(data) {
-        layerObject.clearLayers();
-        L.geoJson(data, {
-            onEachFeature: function(feature,layer) {             
-                if(feature._id == idSelected){
-                    layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Địa chỉ: '+feature.properties.address+'</p>')
-                    .addTo(mapObject).openPopup();
-                }
-            },
-          });
-
-    });
+    console.log(idSelected);
+    if(idSelected == "selectAll"){
+        $.getJSON('/allstore', function(data) {
+            L.geoJson(data, {
+                onEachFeature: selectToBindPopup
+              });
+    
+        });
+    }else{
+        $.getJSON('/allstore', function(data) {
+            layerObject.clearLayers();
+            L.geoJson(data, {
+                onEachFeature: function(feature,layer) {             
+                    if(feature._id == idSelected){
+                        layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Địa chỉ: '+feature.properties.address+'</p>')
+                        .addTo(layerObject).openPopup();
+                    }
+                },
+              });
+    
+        });
+    }
 });
