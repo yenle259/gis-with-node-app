@@ -39,6 +39,49 @@ function onEachFeature(feature, layer) {
 khi gỡ cũng chỉ cần gỡ or clear layer là tắt hết các đối tượng cho tiện  :)) */
 var layerObject = L.layerGroup().addTo(mapObject);
 
+//khai báo featuregroup để vẽ
+var drawnItems = L.featureGroup().addTo(mapObject);	
+//Các option cho công cụ vẽ
+var options = {
+    position: 'topleft',			//default 'topleft'
+    draw: {
+        polyline: {
+            shapeOptions: {
+                color: '#f357a1',
+                weight: 2
+            },
+            metric:true				//default true là met; false là foot
+        },
+        polygon: {
+            shapeOptions: {
+                color: '#bada55'
+            },
+            showArea:true,			//default false
+        },
+        rectangle: {
+            shapeOptions: {
+                color: 'green',
+                weight:2,
+                fillColor:'blue',
+                fillOpacity:0.2		//độ mờ, default 0.2
+            }
+        },
+        marker: {
+            icon: violetIcon
+        },
+        circle: true, 					
+        circlemarker: false, 		// Turns off this drawing tool
+    },
+    edit: {
+        featureGroup: drawnItems, 	//REQUIRED!!
+        edit:true,
+        remove: true,
+    }
+};
+
+//Thêm điều khiển vẽ; Icon mặc nhiên trong thư mục css/images
+var drawControl = new L.Control.Draw(options).addTo(mapObject);
+
 $.getJSON("/allstore", function (ft) { 
     var itemView = $(".item-view");
     function onEachFeature(feature, layer) { //thêm ds các cửa hàng bách hóa xanh vào list bên cạnh
