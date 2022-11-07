@@ -59,11 +59,8 @@ control1.onAdd = function (mapObject) {
 };
 control1.addTo(mapObject);
 
-var allStoreLayer;
-
 // thêm tên tất cả store vào combo box
 $.getJSON("/allstore" , function (data) {
-    allStoreLayer = data;
     var menu = $("#combobox1");
     menu.append("<option>Tất cả</option>");
     data.features.map((item)=>{
@@ -76,11 +73,8 @@ $.getJSON("/allstore" , function (data) {
     })
 });
 
-// console.log($("#combobox1 :selected").val());
-
 $("#combobox1").on("change", function() {
     var idSelected = $("#combobox1").val();
-    // console.log(idSelected);
     $.getJSON('/allstore', function(data) {
         layerObject.clearLayers();
         L.geoJson(data, {
