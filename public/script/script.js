@@ -21,6 +21,7 @@ var greenIcon = new L.Icon({
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
 });
+
 var violetIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -87,7 +88,7 @@ $.getJSON("/allstore", function (ft) {
     function onEachFeature(feature, layer) { //thêm ds các cửa hàng bách hóa xanh vào list bên cạnh
         itemView.append("<div class='item detail-item-current' id="+feature._id+"  zindex='1'><div class='info'><div class='name'>"+feature.properties.name+"</div><div class='address'>"+feature.properties.address+"</div></div></div>");
         layer.bindPopup('<h3>'+feature.properties.name+'</h3><p>Địa chỉ: '+feature.properties.address+'</p>');
-        layer.setIcon(greenIcon);
+        layer.setIcon(goldIcon);
     }
 
     var totalStore =  $("#viewList"); //thêm tổng số cửa hàng ở trên cùng
