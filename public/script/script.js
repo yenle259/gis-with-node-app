@@ -62,7 +62,6 @@ function showText(e) {
     layer = e.layer;
     console.log(layer.toGeoJSON());
     layer.addTo(drawnItems);
-
     var popupContent = 
 			'<form style="width:500px">' + 
 			'Name:<br><input type="text" id="input_name" name="store_name" value=""><br>' +
@@ -91,10 +90,20 @@ function addPoint(){
     layer.feature.properties.name=$("#input_name").val();
     layer.feature.properties.address=$("#input_address").val();
     layer.closePopup();
-    var storeName = $('input[name=store_name]').val();
-    var storeAddress = $('input[name=store_address]').val();
-    console.log(storeName + "/n"+storeAddress);
-    console.log(layer.toGeoJSON());
+    
+    var dataObject = layer.toGeoJSON();
+    $.ajax({
+        async:false,
+        type: "POST",
+        url: '/addPoint',
+        data: JSON.stringify(dataObject),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function(){
+            console.log("gg");
+        },
+      });
+
 }
 
 
