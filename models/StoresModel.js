@@ -1,6 +1,10 @@
+const { render } = require('ejs');
 const {readFileSync} = require('fs');
 
 let loadStore = () => 
     JSON.parse(readFileSync('geojson/stores.geojson'));
 
-module.exports = {loadStore};
+let addStore =()=>{
+
+}
+module.exports = {loadStore, addStore};

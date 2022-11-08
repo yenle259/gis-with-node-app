@@ -52,14 +52,25 @@ var options = {
     }
 };
 
+var layer=new L.Layer();
+
 //Thêm điều khiển vẽ; Icon mặc nhiên trong thư mục css/images
 var drawControl = new L.Control.Draw(options).addTo(mapObject);
 //Khi vẽ thì thêm vào lớp drawnItems
 function showText(e) {
     //drawnItems.clearLayers();
-    var layer = e.layer;
+    layer = e.layer;
     console.log(layer.toGeoJSON());
     layer.addTo(drawnItems);
+
+    var popupContent = 
+			'<form style="width:500px">' + 
+			'Name:<br><input type="text" id="input_name" name="store_name" value=""><br>' +
+            'Address:<br><input type="text" id="input_address" name="store_address" value=""><br> <br>' +
+			'<button type="button" class="btn btn-primary" value="Submit" id="addNewPoint" onclick="addPoint()">Submit</button>' + 
+			'</form>';
+    layer.bindPopup(popupContent).openPopup();
+
     //collection dạng object
     var collection = drawnItems.toGeoJSON();
     //null: không hàm xử lý, 2: thụt từng cấp là 2 khoảng trắng
@@ -72,6 +83,19 @@ function showText(e) {
 
 //Khi một đối tượng được vẽ
 mapObject.on("draw:created", showText);
+
+function addPoint(){
+    layer.feature={};
+    layer.feature.type="Feature";
+    layer.feature.properties={};
+    layer.feature.properties.name=$("#input_name").val();
+    layer.feature.properties.address=$("#input_address").val();
+    layer.closePopup();
+    var storeName = $('input[name=store_name]').val();
+    var storeAddress = $('input[name=store_address]').val();
+    console.log(storeName + "/n"+storeAddress);
+    console.log(layer.toGeoJSON());
+}
 
 
 

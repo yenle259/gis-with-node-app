@@ -3,7 +3,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
-const { loadStore } = require('./models/StoresModel')
+const { loadStore, addStore } = require('./models/StoresModel')
 const  StoreCollection = require("./models/StoreCollection");
 const mongoose = require('mongoose');
 const app = express();
@@ -42,6 +42,8 @@ app.get('/stores', (req, res) => {
     res.send(loadStore());
 })
 
+// addStore()
+
 // create new store collection
 // const storeCollection = new StoreCollection({
 //     "type": "FeatureCollection",
@@ -57,7 +59,17 @@ var bachhoaxanh = StoreCollection.findOne({"_id":"6359293fd0eb15e890ee5d12"})
     console.log('loi ke',err);
 })
 
-
+// var addStore = StoreCollection.findOne({"_id":"6359293fd0eb15e890ee5d12"})
+// .then(function(data){
+//     app.get('/addStore',(req,res)=>{
+//         res.send(data);
+//     })
+// }).catch(function(err){
+//     console.log('loi ke',err);
+// })
+// app.get('/post',(req,res)=>{
+    
+// })
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`))

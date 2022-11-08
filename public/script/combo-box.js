@@ -31,7 +31,6 @@ control1.addTo(mapObject);
 $.getJSON("/allstore" , function (data) {
     var menu = $("#combobox1");
     menu.append("<option id='selectAll' value='selectAll' >Tất cả</option>");
-
     data.features.map((item)=>{
         var locationOp = document.createElement("option");
         locationOp.setAttribute("id",item._id);
