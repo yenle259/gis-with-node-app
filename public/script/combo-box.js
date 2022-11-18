@@ -46,8 +46,20 @@ function selectToBindPopup(feature,layer) {
     .addTo(layerObject);
 }
 
+
+//Tạo nút lệnh Delete
+var deleteBtn = L.control({ position: "bottomright" });
+deleteBtn.onAdd = function (mapObject) {
+    var div = L.DomUtil.create("div", "divdel");
+    div.innerHTML = '<input type="button" id="delete" value="Delete">';
+    return div;
+};
+
+
 $("#combobox1").on("change", function() {
     var idSelected = $("#combobox1").val();
+    deleteBtn.addTo(mapObject);
+    // deleteBtn.val(idSelected);
     console.log(idSelected);
     if(idSelected == "selectAll"){ 
         $.getJSON('/allstore', function(data) {

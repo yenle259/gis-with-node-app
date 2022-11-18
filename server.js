@@ -3,7 +3,6 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
-const { loadStore, addStore } = require('./models/StoresModel')
 const StoreCollection = require("./models/StoreCollection");
 const mongoose = require('mongoose');
 const app = express();
@@ -17,7 +16,6 @@ app.set('view engine', 'ejs')
 
 // connect database
 connectDB();
-
 
 // body parser
 app.use(express.json());
@@ -51,6 +49,8 @@ var bachhoaxanh = StoreCollection.findOne({ "_id": "6359293fd0eb15e890ee5d12" })
         console.log('loi ke', err);
     })
 
+
+// post method to add new point 
 app.post('/addPoint', (req, res) => {
     const dataObject = req.body;
     console.log(dataObject);
@@ -62,7 +62,7 @@ function addNewStore(newStore) {
         data.features.push(newStore);
         data.save();
     })
-    connectDB();
+
 }
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`))

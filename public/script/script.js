@@ -89,7 +89,6 @@ function addPoint(){
     layer.feature.properties={};
     layer.feature.properties.name=$("#input_name").val();
     layer.feature.properties.address=$("#input_address").val();
-    layer.closePopup();
     
     var dataObject = layer.toGeoJSON();
     $.ajax({
@@ -102,8 +101,8 @@ function addPoint(){
         success: function(){
             console.log("gg");
         },
-      });
-
+    });
+    layer.closePopup();
 }
 
 
