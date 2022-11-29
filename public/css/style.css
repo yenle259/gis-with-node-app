@@ -15,7 +15,7 @@ body,
 .legend {
     font-size:16px;
     line-height: 24px;
-    color: #333333;
+    color: green;
     font-family:'OpenSans', Helvetica, sans-serif;
     padding: 10px 14px;
     background-color:  rgba(245, 245, 220, 0.8);
@@ -35,4 +35,19 @@ body,
     max-width: 200px;
     margin: auto;
     display: block;
+}
+
+#vnt-header {
+    background: #008848 !important;
+    border-top: none !important;
+}
+#vnt-footer {
+    background: #008848 !important;
+    
+}
+.box_mid .mid-title .titleL {
+    color: #008848 !important;
+}
+.formSearch .btn-submit-search {
+    background: #008848 !important;
 }

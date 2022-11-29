@@ -4,7 +4,7 @@ const StoreSchema = new mongoose.Schema({
     type: String,
     properties:{
         name: String,
-        address: String,
+        address: String
     },
     geometry:{
         coordinates:{

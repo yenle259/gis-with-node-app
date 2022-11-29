@@ -1,9 +1,10 @@
-const express = require('express');
-const router = express.Router();
+// const express = require('express');
+// const router = express.Router();
 
-const {getStores,addStore} = require('../controllers/stores');
+// const {getStores,addStore} = require('../controllers/stores');
 
-router.route('/').get(getStores).post(addStore);
+// router.route('/')
+//     .get(getStores)
+//     .post(addStore);
 
-router
-module.exports = router;
+// module.exports = router;

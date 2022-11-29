@@ -8,7 +8,8 @@ const Store = new mongoose.Schema({
   },
   properties:{
     name: String,
-    address: String
+    address: String,
+    ward: String
   },
   geometry:{
     coordinates: {
